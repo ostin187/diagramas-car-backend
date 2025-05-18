@@ -7,7 +7,7 @@ import { generateJWT } from '../../utils/jwt.js';
 import {
   sendAlertEmail,
   sendConfirmationEmail,
-} from '../../utils/nodeMailer.js';
+} from '../../utils/nodemailer.js';
 
 // Función auxiliar para crear un retardo
 const crearRetardo = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
