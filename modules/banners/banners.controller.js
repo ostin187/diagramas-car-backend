@@ -24,6 +24,7 @@ export const findOne = catchAsync(async (req, res, next) => {
 });
 
 export const create = catchAsync(async (req, res, next) => {
+  const { link_web_banner } = req.body;
   let link_banner = null;
 
   if (req.file) {
@@ -48,6 +49,7 @@ export const create = catchAsync(async (req, res, next) => {
 
   const banner = await Banners.create({
     link_banner,
+    link_web_banner,
   });
 
   res.status(201).json({

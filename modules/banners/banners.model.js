@@ -8,6 +8,10 @@ const Banners = db.define('banners', {
     allowNull: false,
     type: DataTypes.INTEGER,
   },
+  link_web_banner: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   link_banner: {
     type: DataTypes.TEXT,
     allowNull: false,
